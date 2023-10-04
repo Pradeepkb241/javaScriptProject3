@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>candy shop</title>
+</head>
+<body>
+    <form onsubmit  ="addItem(event)">
+        <label >Candy Name: </label>
+        <input id="candy" type="text" name="candy" required>
+        <label >Description: </label>
+        <input id="description" type="text" name="description" required>
+        <label >Price: </label>
+        <input id="price" type="number" name="price" required>
+
+
+        <label >Quantity: </label>
+        <select  id="table">
+            <option value="100" >100</option>
+            <option value="200" >200</option>
+            <option value="300" >300</option>
+        </select>
+        <button>Add Item</button>
+    </form>
+    <h1>Orders</h1>
+    <ul id="listOfItem"></ul>
+   
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.1/axios.min.js"></script>
+    <script src="candy.js"></script>
+</body>
+</html>
